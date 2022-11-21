@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 onclick="ha()">
+        CLick to change the below text
+    </h1>
+    <p id="cha"> some random text.</p>
+<script>
+    function ha()
+    {
+        var x = "some text "+23;
+        var y = document.getElementById('cha');
+            if (y="some random text.")
+            {
+                document.getElementById('cha').innerHTML=x 
+            }
+            else 
+            {
+                document.getElementById('cha').innerHTML="some random text."
+            }
+
+    }
+</script>
+</body>
+</html>

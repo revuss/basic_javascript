@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array functions in javascript</h1>
+    <script>
+        var x = [1,2,42,23,24,23,4,32,4,32]
+        document.write("Array to String with arr.toString() <br>" + x.join("  ,  "));
+        document.write("<br>Array to String with arr.pop() <br>" + x.pop());
+        document.write("<br>Array to String with arr.shift() <br>" + x.shift());
+        x.splice(1,0,"12")  
+        document.write("<br>Array to String with arr.splice(1,0) <br>" + x.splice(1,0,"12"));
+        document.write("<br>Array to String with arr.sort() <br>" + x.sort());
+        document.write("<br>Array to String with arr.reverse() <br>" + x.reverse());
+       var y = [1,23,12,3,12,3,12]
+       document.write("<br/><br/><br/>"+x.concat(y));
+    </script>
+</body> 
+</html>

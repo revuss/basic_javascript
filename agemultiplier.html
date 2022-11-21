@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <form style="padding: 100px;">
+        <label for="number" style="padding: 20px;margin:20px;">Enter value :</label>
+        <input type="text" style="padding: 20px;margin:20px;" placeholder="eneter any number" name="number">
+        <br/>
+        <input type="button" style="padding: 20px;margin:20px;" value="CAl" onclick="get_result(this.form)"/>
+        <label style="padding: 20px;margin:20px;" name="Result" for="result_value">        </label>
+        <input style="padding: 20px;margin:20px;"    type="text" name="result_value"/>
+    </form>
+    <script>
+        function get_result(form)
+        {
+            form.result_value.value = form.number.value * 7;
+        }
+    </script>
+</body>
+</html>

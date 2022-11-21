@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body
+    {
+        text-align: center;
+        background-color: blueviolet;
+        font-family: Arial, Helvetica, sans-serif;
+        transition: ease 1s;
+    }
+    .container img
+    {
+        align-content: center;
+        align-items: center;
+        width: 80vw;
+        height: 60vh;
+        transition: ease 12s;
+    }
+    .hovel img
+    {   
+        padding: 2px;
+        height: 10vh;
+        margin: 3px;
+        transition: ease 1s;    
+    }
+    .hovel img:hover
+    {
+        border: 5px solid whitesmoke ;
+         
+    }
+</style>
+<body>
+    <h1> Sample page</h1>
+
+    <br/>
+    <div class="container" align="center">
+        <img name="container" src="./images/one.jpg">
+    </div>    
+    <br/>
+    <div class="hovel" >
+        <img onmouseover="container.src=image_one.src" name="image_one" src="./images/one.jpg" alt=""/>
+        <img onmouseover="container.src=image_two.src" name="image_two" src="./images/two.jpg" alt=""/>
+        <img onmouseover="container.src=image_three.src" name="image_three" src="./images/three.jpg" alt=""/>
+        <img onmouseover="container.src=image_four.src" name="image_four" src="./images/four.jpg" alt=""/>
+    </div>
+</body>
+</html>
